@@ -12,3 +12,11 @@ int sumArray(int arr[]) {
 
     return sum;
 }
+
+int mulArray(int arr[]) {
+    int i, temp = 1;
+    for (i = 0; i < sizeof(arr); ++i) {
+        temp = temp * arr[i];
+    }
+    return temp;
+}
