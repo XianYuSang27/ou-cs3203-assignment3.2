@@ -56,9 +56,7 @@ int main()
     cout << "Reversed array: ";
     for (int i = 0; i < 4; ++i) {
         cout << arr[i] << " ";
-    }
-    
-    //commit for part10
-    cout << endl;
+    }   cout << endl;
+
 
 }
