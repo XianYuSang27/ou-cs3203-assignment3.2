@@ -12,3 +12,7 @@ int sumArray(int arr[]) {
 
     return sum;
 }
+
+void rev(int arr[]) {
+    reverse(arr, arr + sizeof(arr));
+}
