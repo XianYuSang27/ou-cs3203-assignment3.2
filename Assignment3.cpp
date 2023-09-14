@@ -16,3 +16,20 @@ int sumArray(int arr[]) {
 void rev(int arr[]) {
     reverse(arr, arr + sizeof(arr));
 }
+
+int main()
+{
+    int arr[4];
+    cout << "Please enter 4 integers" << endl;
+    for (int i = 0; i < 4; ++i)
+        cin >> arr[i];
+
+    cout << "Sum of the integers is: " << sumArray(arr) << endl;
+
+    cout << "Reversed array: ";
+    for (int i = 0; i < 4; ++i) {
+        cout << arr[i] << " ";
+    }
+
+
+}
