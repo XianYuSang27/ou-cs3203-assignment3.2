@@ -13,12 +13,18 @@ int sumArray(int arr[]) {
     return sum;
 }
 
-int mulArray(int arr[]) {
+    int mulArray(int arr[]) {
     int i, temp = 1;
     for (i = 0; i < sizeof(arr); ++i) {
         temp = temp * arr[i];
     }
     return temp;
+}
+
+=======
+void rev(int arr[]) {
+    reverse(arr, arr + sizeof(arr));
+
 }
 
 int main()
@@ -29,6 +35,15 @@ int main()
         cin >> arr[i];
 
     cout << "Sum of the integers is: " << sumArray(arr) << endl;
-    cout << "Product of the integers is: " << mulArray(arr) << endl;
 
+    cout << "Product of the integers is: " << mulArray(arr) << endl;
+====== =
+    rev(arr);
+    cout << "Reversed array: ";
+    for (int i = 0; i < 4; ++i) {
+        cout << arr[i] << " ";
+    }
+
+    //change for part 10
+    cout << endl;
 }
